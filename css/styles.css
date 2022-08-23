@@ -163,7 +163,7 @@ img {
     rgba(47, 48, 58, 0.4)
     ),
   url(../images/bgrnd-img.jpg);
-  background-size:auto;
+  background-size:cover;
   background-repeat:no-repeat;
   background-position: center;
   color: var(--text-color-on-drk-bgrd);
@@ -248,6 +248,35 @@ padding-bottom: 94px;
   /* border: 1px solid #2196f3; */
 }
 
+/* Додаю іконки в розділ переваги */
+
+.benefits-card::before {
+  content: "";
+  display: block;
+  margin-bottom: 30px;
+  height: 120px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  background-repeat: no-repeat;
+  background-position: center;
+  }
+
+.benefits-card.icon-antenna::before {
+  background-image: url(../images/svg/antenna.svg);
+ }
+
+ .benefits-card.icon-clock::before {
+  background-image: url(../images/svg/clock.svg);
+ }
+
+  .benefits-card.icon-diagram::before {
+  background-image: url(../images/svg/diagram.svg);
+ }
+
+  .benefits-card.icon-astronaut::before {
+  background-image: url(../images/svg/astronaut.svg);
+ }
+
 /* Стилізуємо секцию -чим ми займаэмося- */
 
 .section  .title
@@ -305,6 +334,21 @@ padding-bottom: 94px;
   text-align: center;
   /* margin-bottom: 30px; */
 }
+
+.list.clients {
+  display: flex;
+  gap: 30px;
+  /* justify-content: space-between; */
+}
+
+.item-client a {
+  display: block;
+  width: 170px;
+  height: 92px;
+  border: 1px solid #AFB1B8;
+  border-radius: 4px;
+}
+
 
 /* Доповнює стилізацію нижнього логотипа */
 
