@@ -143,12 +143,14 @@ img {
 .letter {
   fill: currentColor;
 }
-.header-contact:hover .letter {
+.header-contact:hover .letter,
+.header-contact:focus .letter {
   border-radius: 2px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
-.header-contact:hover .smartphone {
+.header-contact:hover .smartphone,
+.header-contact:focus .smartphone {
   border-radius: 2px;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
@@ -184,7 +186,8 @@ img {
     rgba(47, 48, 58, 0.4)
     ),
   url(../images/bgrnd-img.jpg);
-  /* max-width: 600px; */
+  max-width: 1600px;
+  margin: 0 auto;
   background-size:cover;
   background-repeat:no-repeat;
   background-position: center;
@@ -219,7 +222,8 @@ img {
 }
 /* встановлення ховера для кнопки форми */
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   opacity: 0.95;
   /* transform: translate(-1px, -1px); */
   filter: drop-shadow(4px 4px 4px rgba(255, 255, 255, 0.43));
@@ -367,7 +371,8 @@ padding-bottom: 94px;
 }
 
 
-.section.team .social-item .links:hover {
+.section.team .social-item .links:hover,
+.section.team .social-item .links:focus {
 background-color: var(--accent-color); 
 color: var(--text-color-on-drk-bgrd); 
 }
@@ -439,7 +444,8 @@ color: var(--text-color-on-drk-bgrd);
 
 .footer .container {
   display: flex;
-  gap: 70px;
+  /* gap: 70px; */
+  align-items: baseline;
 }
 
 .social-title {
@@ -470,9 +476,8 @@ margin-bottom: 20px;
   color: var(--text-color-on-drk-bgrd);
 }
 
-.footer .section-social {
-  /* display: block; */
-  margin-top: 12px;
+.footer .wrapper-adrs {
+  margin-right: 70px;
 }
 
 .footer .social-item .links {
@@ -485,11 +490,12 @@ margin-bottom: 20px;
   align-items: center;
 }
 
-.footer .social-item .links:hover {
+.footer .social-item .links:hover,
+.footer .social-item .links:focus {
 background-color: var(--accent-color);  
 }
 
-.footer .section-social .social-icon {
+.footer .wrapper-social .social-icon {
   fill: var(--text-color-on-drk-bgrd);
 }
  
@@ -620,7 +626,9 @@ background-color: var(--accent-color);
   /* border: 1px solid tomato; */
 }
 
-.project-card:hover {
+.project-card .links:hover,
+.project-card .links:focus {
+  display: block;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 0px 0px 4px 4px;
