@@ -514,20 +514,20 @@ background-color: var(--accent-color);
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
  }
-/* .mail:hover,
+.mail:hover,
 .mail:focus {
   color: var(--accent-color);
-} */
+}
 
 .tel {
   /* display: inline-block; */
   font-style: normal;
   color: rgba(255, 255, 255, 0.6);
 }
-/* .tel:hover,
+.tel:hover,
 .tel:focus {
   color: var(--accent-color);
-} */
+}
 
 /* стилізація сторінки -портфоліо- */
 
